@@ -1,6 +1,6 @@
 // import postgres from 'postgres';
 
-// const sql = postgres(process.env.POSTGRES_URL!, { ssl: 'require' });
+// const sql = postgres(process.env.POSTGRES_URL!);
 
 // async function listInvoices() {
 // 	const data = await sql`
@@ -16,7 +16,7 @@
 export async function GET() {
   return Response.json({
     message:
-      'Uncomment this file and remove this line. You can delete this file when you are finished.',
+      "Uncomment this file and remove this line. You can delete this file when you are finished.",
   });
   // try {
   // 	return Response.json(await listInvoices());
