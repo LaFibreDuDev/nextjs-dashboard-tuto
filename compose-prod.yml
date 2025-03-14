@@ -1,0 +1,27 @@
+services:
+  next:
+    build: .
+    depends_on:
+      - postgres
+    networks:
+      - next_network
+  postgres:
+    image: postgres:latest
+    restart: always
+    environment:
+      POSTGRES_PASSWORD: example
+      POSTGRES_USER: example
+      POSTGRES_DB: example
+    ports:
+      - 5434:5432
+    volumes:
+      - postgres_data:/var/lib/postgresql
+    networks:
+      - next_network
+
+networks:
+  next_network:
+    driver: bridge
+
+volumes:
+  postgres_data:
