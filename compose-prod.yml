@@ -11,9 +11,10 @@ services:
     networks:
       - next_network
   next:
-    build: .
-    depends_on:
-      - postgres
+    build:
+      context: .
+      dockerfile: Dockerfile
+    depends_on: postgres
     networks:
       - next_network
 
