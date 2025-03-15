@@ -3,15 +3,8 @@ services:
     build:
       context: .
       dockerfile: Dockerfile
-    depends_on:
-      postgres:
-        condition: service_healthy
     networks:
       - next_network
-
-networks:
-  next_network:
-    driver: bridge
 
 volumes:
   postgres_data:
