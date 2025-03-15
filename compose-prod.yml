@@ -4,7 +4,11 @@ services:
       context: .
       dockerfile: Dockerfile
     networks:
-      - next_network
+      - dockploy-network
+
+networks:
+  dockploy-network:
+    external: true
 
 volumes:
   postgres_data:
