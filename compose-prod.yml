@@ -4,10 +4,10 @@ services:
       context: .
       dockerfile: Dockerfile
     networks:
-      - dokploy-network
+      - my_network
 
 networks:
-  dokploy-network:
+  my_network:
     external: true
 
 volumes:
