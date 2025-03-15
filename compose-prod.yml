@@ -1,20 +1,4 @@
 services:
-  postgres:
-    image: postgres:latest
-    restart: always
-    environment:
-      POSTGRES_PASSWORD: example
-      POSTGRES_USER: example
-      POSTGRES_DB: example
-    volumes:
-      - postgres_data:/var/lib/postgresql
-    networks:
-      - next_network
-    healthcheck:
-      test: ["CMD-SHELL", "pg_isready -U user"]
-      interval: 10s
-      retries: 5
-      start_period: 10s
   next:
     build:
       context: .
