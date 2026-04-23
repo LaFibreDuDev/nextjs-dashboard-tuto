@@ -23,7 +23,7 @@ services:
     environment:
       NODE_ENV: production
       PORT: "3000"
-      DATABASE_URL: "${DATABASE_URL}"
+      POSTGRES_URL: "${POSTGRES_URL}"
       AUTH_SECRET: "${AUTH_SECRET}"
       AUTH_URL: "${AUTH_URL}"
       NEXT_TELEMETRY_DISABLED: "1"
