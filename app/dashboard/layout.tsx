@@ -1,5 +1,6 @@
 import SideNav from "@/app/ui/dashboard/sidenav";
 
+export const dynamic = "force-dynamic";
 export const experimental_ppr = true;
 
 export default function Layout({ children }: { children: React.ReactNode }) {
