@@ -7,8 +7,8 @@ services:
 
     # Permet au conteneur d'atteindre PostgreSQL installé sur l'hôte VPS
     # via l'adresse "host.docker.internal"
-    extra_hosts:
-      - "host.docker.internal:host-gateway"
+    #extra_hosts:
+    #  - "host.docker.internal:host-gateway"
 
     networks:
       - dokploy-network
