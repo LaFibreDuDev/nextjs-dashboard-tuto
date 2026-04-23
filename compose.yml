@@ -11,8 +11,8 @@ services:
     extra_hosts:
       - "host.docker.internal:host-gateway"
 
-    ports:
-      - "3001:3000"
+    networks:
+      - dokploy-network
 
     # Les variables sont définies dans l'interface Dokploy > Environment
     environment:
@@ -29,3 +29,7 @@ services:
       timeout: 10s
       retries: 3
       start_period: 40s
+
+networks:
+  dokploy-network:
+    external: true
