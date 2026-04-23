@@ -73,7 +73,7 @@ RUN chown bun:bun .next
 COPY --from=builder --chown=bun:bun /app/.next/standalone ./
 COPY --from=builder --chown=bun:bun /app/.next/static ./.next/static
 COPY --from=dependencies --chown=bun:bun /app/node_modules ./node_modules
-COPY --from=builder --chown=bun:bun /app/scripts ./scripts
+#COPY --from=builder --chown=bun:bun /app/scripts ./scripts
 
 # If you want to persist the fetch cache generated during the build so that
 # cached responses are available immediately on startup, uncomment this line:
