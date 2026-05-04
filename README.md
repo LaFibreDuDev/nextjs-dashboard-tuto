@@ -10,3 +10,5 @@ Ces différents points permettent de publier le projet Next sur Vercel, tout en 
 ```
 
 Problématique : le fait que Next, lorsqu'il compile le projet, a besoin d'accéder à la base PostGreSQL, notamment pour faire un rendu statique des pages. Du coup, cette option permet d'éviter d'avoir besoin de la base PostGreSQL au moment de ce build.
+
+Changement du README (simulation)
